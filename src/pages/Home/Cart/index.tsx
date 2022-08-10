@@ -11,12 +11,12 @@ import Header from '../../../components/Header/index.js';
 const { Title } = Typography
 const { Content, Sider } = Layout;
 interface Icart{
-    cart: [],
+    cart: any[],
     total: number
 }
 
 function CartPage() {
-    const { cart } = useSelector(store => store.cart)
+    const  cart: Icart  = useSelector(store => store.cart)
     const dispatch = useDispatch()
     const decreaseProduct = (id: string) => {
         dispatch(cartSlice.actions.decrease(id))

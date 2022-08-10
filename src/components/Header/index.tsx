@@ -8,7 +8,7 @@ import AutoComplete from "../Input/AutoComplete";
 
 if (localStorage.getItem("user")) {
   Header.defaultProps = {
-    name: "Chào mừng " + JSON.parse(localStorage.getItem("user")).user.email,
+    name: "Chào mừng " + JSON.parse(localStorage.getItem("user")|| '{}').user.email,
   };
 }
 
