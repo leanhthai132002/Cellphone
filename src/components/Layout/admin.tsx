@@ -20,7 +20,6 @@ const item3: MenuProps['items'] = [
     label: <Link to="/admin/categories">Categories</Link>
   },
 ]
-
 const App: React.FC = () => (
   <Layout>
     <HeaderCustom>
