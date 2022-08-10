@@ -14,6 +14,7 @@ type FormInputs = {
 const Signup = () => {
   const { register, handleSubmit, formState } = useForm({
     defaultValues: {
+      _id: "",
       phone: "",
       roll: "user",
       email: "",

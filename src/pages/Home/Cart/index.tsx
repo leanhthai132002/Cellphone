@@ -10,18 +10,21 @@ import styled from 'styled-components';
 import Header from '../../../components/Header/index.js';
 const { Title } = Typography
 const { Content, Sider } = Layout;
-
+interface Icart{
+    cart: [],
+    total: number
+}
 
 function CartPage() {
-    const { cart } = useSelector(store => store)
+    const { cart } = useSelector(store => store.cart)
     const dispatch = useDispatch()
-    const decreaseProduct = (id) => {
+    const decreaseProduct = (id: string) => {
         dispatch(cartSlice.actions.decrease(id))
     }
-    const increaseProduct = (id) => {
+    const increaseProduct = (id: string) => {
         dispatch(cartSlice.actions.increase(id))
     }
-    const deleteProduct = (id) => {
+    const deleteProduct = (id: string) => {
         dispatch(cartSlice.actions.delete(id))
     }
     return (
