@@ -15,8 +15,13 @@ interface Icart{
     total: number
 }
 
+interface IState {
+    cart: Icart
+    product: any
+}
+
 function CartPage() {
-    const  cart: Icart  = useSelector(store => store.cart)
+    const  cart: Icart  = useSelector((store: IState)  => store.cart)
     const dispatch = useDispatch()
     const decreaseProduct = (id: string) => {
         dispatch(cartSlice.actions.decrease(id))
