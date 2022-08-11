@@ -123,13 +123,14 @@ function GroupExample() {
         </div>
       </div>
       <div>
-        <Typography.Title
+        
+        <div className="categories-content">
+          <Typography.Title
           level={2}
           style={{ marginLeft: "100px", marginTop: "10px" }}
         >
           Linh kiện máy tính
         </Typography.Title>
-        <div className="categories-content">
           <div style={{ display: 'flex', justifyContent: 'center' }} className="categories-content-wrapper is-flex">
             <div className="item-categories-outer"><AStyle href="https://cellphones.com.vn/may-tinh-de-ban/lap-rap.html" className="item-categories " data-src="https://cdn2.cellphones.com.vn/180x/https://cellphones.com.vn/media/icons/category/cate-868.svg" style={{ backgroundColor: 'rgb(252, 165, 165)', backgroundImage: 'url("https://cdn2.cellphones.com.vn/180x/https://cellphones.com.vn/media/icons/category/cate-868.svg")' }}><span>PC ráp sẵn CellphoneS</span></AStyle> {/**/}</div>
             <div className="item-categories-outer"><AStyle href="https://cellphones.com.vn/linh-kien/cpu.html" className="item-categories " data-src="https://cdn2.cellphones.com.vn/180x/https://cdn.cellphones.com.vn/media/catalog/product/c/p/cpu_1.png" style={{ backgroundColor: 'rgb(253, 164, 175)', backgroundImage: 'url("https://cdn2.cellphones.com.vn/180x/https://cdn.cellphones.com.vn/media/catalog/product/c/p/cpu_1.png")' }}><span>CPU</span></AStyle> {/**/}</div>
@@ -153,8 +154,8 @@ const FakeStyle = styled.div`
     text-decoration: none;
     min-height: 125px;
     width: 100px;
-    margin: 20px;
     color: #fff;
+    margin: 10px;
 `
 
 const AStyle = styled.a`
@@ -169,10 +170,11 @@ const AStyle = styled.a`
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     min-height: 125px;
     width: 100px;
-    margin: 20px;
+    margin: 10px;
     color: #fff;
     text-align: left;
     font-weight: bold ;
+    padding: 5px
 `;
 
 const StarStyle = styled.span`
