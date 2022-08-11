@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { signin } from '../../api/auth';
 import LogoImage from '../../assets/images/logo.png'
@@ -57,6 +57,7 @@ const Signin = () => {
         <input type="submit" name="dangnhap" value="Đăng nhập" className="btn btn-primary form-control btn-user btn-block" defaultValue="Đăng nhập" />
         <section />
         <br />
+        <p>Chưa có tài khoản? <Link to='/signup'>Đăng kí ngay</Link></p>
         <div className='form-group'>
           <p style={{ textAlign: 'center' }} >Hoặc đăng nhập bằng</p>
           <div style={{textAlign: 'center'}}>

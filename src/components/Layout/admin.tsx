@@ -32,8 +32,6 @@ const App = () => {
       alert("Bạn không có quyền")
       navigate('/')
     }
-
-
   }, []);
 
   return (
